@@ -1,0 +1,4 @@
+css are 3 types
+1. inline css(write in every tag)
+2. internal css(write inside head with <style></style>)
+3. external css (write in a css file and link it in head with <link rel="stylesheet" href="./style/style.css">)
