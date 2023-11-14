@@ -1,5 +1,7 @@
 body{
     background-color: grey;
+    margin: 0px;
+    padding: 0px;
 }
 #heading{
     font-family: 'Times New Roman', Times, serif;
@@ -50,4 +52,37 @@ body{
     top: 30%;
     
     
+}
+.banner{
+    background-image: url("../image/image.jpg"),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6));
+    background-blend-mode: overlay;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-text{
+    color: aqua;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+}
+@media only screen and (max-width:480px){
+    .banner-text{
+        color: brown;
+        font-size: 25px;
+    }
+    .banner{
+        height: 50vh;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:880px){
+    .banner-text{
+        color: green;
+        font-size: 35px;
+    }
+    .banner{
+        height: 80vh;
+    }
 }
