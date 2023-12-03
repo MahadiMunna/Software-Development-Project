@@ -7,7 +7,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     text-align: center;
-    background:linear-gradient(45deg,red,green)
+    background:linear-gradient(45deg,rgb(250, 207, 248),rgb(241, 247, 248),rgb(170, 169, 247),rgb(170, 169, 247))
 }
 .box{
     width: 50%;
@@ -77,7 +77,7 @@ body{
         height: 50vh;
     }
 }
-@media only screen and (min-width:481px) and (max-width:880px){
+@media only screen and (min-width:481px) and (max-width:768px){
     .banner-text{
         color: green;
         font-size: 35px;
