@@ -1,0 +1,42 @@
+ES6 - ECMAScript 6 (Standard Edition of JavaScript)
+
+for declare variable:
+var variableName = value; (functional scope)
+let variableName = value; (block scope)
+const variableName = value; (block scope and unchangeable) 
+
+template string:
+template string use caret (``) for write multiple line value in a variable. it support dynamic value and for write this in template string just use ${variableName}.
+
+split operator:
+...arrayName ! this style name is split operator and it split array values. it also use for copy an array.
+
+arrow function:
+const functionName = (parameters) => { //single line don't need return or {block}.
+    function task;
+    return;
+}
+
+array destructuring:
+const [index, name] = arrayName;
+
+object destructuring:
+const {propertyName, propertyName, propertyName} = objectName;
+
+map:
+take every element of a array 
+
+filter:
+take elements according to condition
+
+find:
+take specific elements which match the condition
+
+forEach:
+work with every element
+
+################################
+API - Application Programming Interface (Communication between client and server)
+
+syncronus: work serially
+asyncronus: work serially but if any middle task take time it will execute next task and when the middle task is done then that will execute.
