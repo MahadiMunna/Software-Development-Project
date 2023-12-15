@@ -66,14 +66,14 @@
 // console.log(ans);
 
 // API 
-fetch('https://jsonplaceholder.typicode.com/todos')
+fetch('https://openapi.programming-hero.com/api/videos/categories')
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.log(err));
 
 const loadData = async() => {
     try{
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+        const response = await fetch('https://openapi.programming-hero.com/api/videos/categories');
         const data = await response.json();
         console.log(data);
     }catch{

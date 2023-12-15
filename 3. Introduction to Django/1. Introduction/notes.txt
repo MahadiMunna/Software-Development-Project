@@ -1,0 +1,72 @@
+CRUD - Create(post), Retrive(get), Update(edit), Delete(delete)
+
+request to server <-> response from server 
+
+here Django is use for backend. Lets play with request and response!
+
+
+
+What is Django- Django is a web app framework written in python. It based on MVT(Model Vew Template) design pattern. It is also called batteries included framework because django provides built in features for everything.
+
+Why django-
+1. Excellent documentation and high scalability(can handle huge amounts of user).
+2. Used by top MNCs and company like instagram, spotify, youtube, bitbucket, dropbox etc.
+3. Easy framework, rapid development, batteries fully included.
+4. Can integrate web scraping, machine learning, image prcessing, scientific computing with web applications.
+
+How django works-
+MVT(Model Vew Template) design pattern. # main logical componenets Model, View and Template.
+
+user <-> django application <-> URL <-> view <-> model(database) and template(UI)
+
+Features of Django-
+1. Admin interface
+2. Object Relational Mapping(ORM) - Python code will convert into sql database(python object to table).
+3. URL routing
+4. Template system
+5. Form handling
+6. Security features
+
+Steps to install Django-
+
+Installation can be:
+- Globally
+- In virtual environment
+
+What is virtual environment-
+A tool tha helps to keep dependencies required by different projects separate by  creating isolated python virtual environment. For example - 
+- Project Alpha (Packages A v1.0, B v3.7, C v2.0) 
+- Project Beta (Packages A v2.0, B v2.7, C v3.0) 
+both project are kept in an environment where the project dependencies varsions are kept independent. 
+
+How venv works:
+1. Installing virtual environment - Already installed with python, if not- $pip install pipenv
+2. Test env installation - $pipenv --version
+3. Naming virtual environment - $python -m env room1
+4. Activating virtual environment - $<venv>\Scripts\activate.bat
+5. deactivating virtual environment - $deactivate
+
+Installing Django-
+1. $pip install django
+2. $django-admin --version
+3. $python -m venv room1
+4. $cd room1
+4. $Scripts\activate.bat
+5. $django-admin startproject project_1
+6. $cd project_1
+7. $python manage.py runserver
+
+Discussion about Django-project folder structure-
+# root directory - Outer project folder where manage.py build
+# inner directory - inside project folder another same project name folder
+# _init_.py - considered as python Packages
+# wsgi.py - Web server gateway interface is a specifiaction that describes how a web server communicates with web app, synchronous(next task will not execute until the first task complete).
+# asgi.py - Asynchronous server gateway interface. Standard for both async and sync.
+# settings.py - This file contain all the information about project settings. E.G. Database config, template, installed applications, validators etc.
+# urls.py - routing
+# manage.py - project specific command-line utility.
+
+application is the small unit of project. Some applications together makes a project.
+
+for creating application - 
+$django-admin startapp app_name
