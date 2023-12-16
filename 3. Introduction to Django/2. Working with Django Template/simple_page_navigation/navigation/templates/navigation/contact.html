@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>This is contact page from navigation</h1>
+    <h1><a href="/">Home</a></h1>
+    <h1><a href="/navigation/about">About</a></h1>
+    <h1><a href="/navigation/contact">Contact</a></h1>
+    <h1>Author : {{author}}</h1>
+    <h1>Age : {{age}}</h1>
+
+    <!-- conditional statement -->
+    {% if age >= 20 %}
+    <h4>You will get driving licence</h4>
+    {% elif age < 20 %}
+    <h4>You won't get licence</h4>
+    {% endif %}
+
+    <!-- for loop -->
+    {% for i in courses %}
+    <h3>ID:{{i.id}} Name:{{i.name}} Fee:{{i.fee}}</h3>
+    {% endfor %}
+
+    <!-- template filtering -->
+    {{lst}}
+    <h1>{{lst|join:"-"}}</h1>
+    
+    <h1>{{'Happy coding' | truncatechars:6}}</h1>
+
+    <a href="/">Back</a>
+</body>
+</html>
