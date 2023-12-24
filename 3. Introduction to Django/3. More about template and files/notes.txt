@@ -1,0 +1,9 @@
+files that not come from backend is called static files. CSS files are also static files.
+
+load static files from project:
+1. In setting: STATICFILES_DIRS = [
+    BASE_DIR/'static',
+]
+2. load static in template: {% load static %}
+3. Use src with static keyword: src="{% static '571.jpg' %}"
+
