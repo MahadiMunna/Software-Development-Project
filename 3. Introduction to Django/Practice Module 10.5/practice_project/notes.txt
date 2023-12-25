@@ -1,0 +1,1 @@
+Here simplae page navigation, data backend to frontend and template filters are practiced.

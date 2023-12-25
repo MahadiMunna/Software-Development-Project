@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 10.5</title>
+</head>
+<body>
+    <h1>This is Home page</h1>
+    <a href="practice_app/">Go to App page</a><br><br>
+
+    <h1>Use of template string given below-</h1>
+
+    <!-- Join Filter -->
+    <h2>User name: {{ userName | join:" " }}</h2>
+    
+    <!-- Date Filter -->
+    <h2>Date: {{ date  | date:"D d M Y" }}</h2>
+    
+    <!-- Default Filter -->
+    <h2>Study: {{ study  | default:"No data given" }}</h2>
+
+    <!-- Add Filter -->
+    <h2>Height: {{ height | add:"1" }}</h2>
+    
+    <!-- Capfirst Filter -->
+    <h2>Nickname: {{ nickname | capfirst }}</h2>
+
+    <!-- Cut Filter -->
+    <h4>Msg: {{ msg | cut:" " }}</h4>
+    
+    <!-- Dictsort Filter -->
+    <h3>Friends: {{ friends | dictsort:"name" }}</h3>
+    
+    <!-- First Filter & last filter -->
+    <h3>First Friend: {{ friends | first }}</h3>
+    <h3>Last Friend: {{ friends | last }}</h3>
+
+    <!-- Length Filter -->
+    <h3>Number of friends: {{ friends | length }}</h3>
+
+    <!-- Linenumbers Filter -->
+    <h3>msg lines: {{ msg | linenumbers }}</h3>
+    
+    <!-- Lower Filter -->
+    <h3>msg in lower case: {{ msg | lower }}</h3>
+    
+    <!-- Upper Filter -->
+    <h3>msg in Upper case: {{ msg | upper }}</h3>
+    
+    <!-- Title Filter -->
+    <h3>msg in Title: {{ msg | title }}</h3>
+    
+    <!-- Random Filter -->
+    <h3>Hobbies in random: {{ favourite | random }}</h3>
+
+    <!-- Slice Filter -->
+    <h3>Hobby in slice: {{ favourite | slice:"2" }}</h3>
+
+    <!-- Time Filter -->
+    <h3>Time: {{ date | time:"H\h i\m" }}</h3>
+
+    <!-- Truncatechars Filter -->
+    <h3>msg Truncatechars: {{ msg | truncatechars:10 }}</h3>
+    
+    <!-- Wordcount Filter -->
+    <h3>Total word in msg: {{ msg | wordcount }}</h3>
+   
+    <!-- Truncatewords Filter -->
+    <h3>msg Truncatewords: {{ msg | truncatewords:5 }}</h3>
+   
+    <!-- Pluralize Filter -->
+    <h3>I have {{ laptop }} laptop{{ laptop | pluralize:"s" }}</h3>
+    
+    <!-- Make_list Filter -->
+    <h3>Nickname in a list: {{ nickname | make_list }}</h3>
+
+    <!--divisibleby Filter -->
+    <h3>Laptop divisible by 2: {{ laptop | divisibleby:"2" }}</h3>
+    
+    <!--slugify Filter -->
+    <h3>msg slugify: {{ msg | slugify }}</h3>
+
+</body>
+</html>
