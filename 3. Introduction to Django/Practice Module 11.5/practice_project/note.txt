@@ -1,0 +1,1 @@
+Here inheritance of tenplate is practiced along with bootstrap and context.
