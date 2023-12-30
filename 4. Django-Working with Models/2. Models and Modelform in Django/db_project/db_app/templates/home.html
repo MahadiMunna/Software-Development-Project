@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is home</h1>
+    <div>
+        {{form}}
+    </div>
+    {% if data %}
+    <table>
+        <tr>
+            <th>Roll</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+        {% for st in data %}
+        <tr>
+            <td>{{st.roll}}</td>
+            <td>{{st.name}}</td>
+            <td>{{st.class_name}}</td>
+            <td>{{st.address}}</td>
+            <td><button><a href="{% url 'delete_student' st.roll %}">Delete</a></button></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% else %}
+    <h1>No data to show</h1>
+    {% endif %}
+</body>
+</html>

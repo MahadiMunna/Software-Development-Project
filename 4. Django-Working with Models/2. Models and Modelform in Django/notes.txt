@@ -1,0 +1,30 @@
+ORM - Object-Relational Mapper
+Its a programming technique that helps application to interact with the database such as SQLite, MySQL, PostgreSQL, Oracle.
+- Create database schema from defines classes or models
+- Generate SQL from Python code
+- Help to change database
+- Use connectors to connect with database
+
+QuerySet:
+collections of objects
+- helps to read, filter and order data from the database
+
+Model:
+Model contains essential fields, behaviour of data and represent a database.
+- Modle class represent table
+- Model is actually python class
+- Each attribute represents field of table
+- Django give automatically-generated database-access API
+- Django provides sqlite database by default
+- We can use other database like MySQL, oracle SQL etc.
+
+Migrations:
+Migrations are way of prpagating changes to make models into datbase schema.
+makemigrations - convert model class into sql statements.
+migrate - execute sql statements
+showmigrations -lists all migrations
+
+for creating admin:
+py manage.py createsuperuser
+
+to browse db.sqlite use DB browser for sqlite
