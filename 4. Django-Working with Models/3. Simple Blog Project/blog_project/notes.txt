@@ -1,0 +1,20 @@
+Relationship in django model:
+1. One to one relationship
+example: person has one passport
+code:
+OneToOneField(to, on delete, parent_link-False, **options)
+to and on_delete is required
+we can pass some value in on_delete like:
+- models.CASCADE
+- models.PROJECT
+- models.SET_NULL
+- models.SET_DEFAULT
+- models.SET()
+- models.SET_ON_DELETE
+- models.DO_NOTHING
+
+2. Many to one relationships
+example: person has many dress
+
+3. Many to many relationships
+example: multiple customer buy multiple phone
