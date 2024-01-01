@@ -1,0 +1,32 @@
+{% extends 'base.html' %}{% block content %}
+<div class="my-5 container mx-auto">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Musician Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Album Rating</th>
+            <th scope="col">Instrument Type</th>
+            <th scope="col">Album Name</th>
+            <th scope="col">Release Date</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for album in data %}
+          <tr>
+            <td>{{album.id}}</td>
+            <td><a class="text-decoration-none" href="{% url 'edit_musician' album.musician.id %}">{{album.musician}}</a></td>
+            <td>{{album.musician.email}}</td>
+            <td>{{album.rating}}</td>
+            <td>{{album.musician.instrument_type}}</td>
+            <td>{{album.album_name}}</td>
+            <td>{{album.release_date}}</td>
+            <td><a href="{% url 'edit_album' album.id %}" class="btn btn-warning me-1">Edit</a><a href="{% url 'delete_album' album.id %}" class="btn btn-danger">Delete</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+</div>
+{% endblock %}
