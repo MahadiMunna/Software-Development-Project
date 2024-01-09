@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+{% if messages %}
+    {% for message in messages %}
+    <p class="bg-success p-3 text-center text-white">{{message}}</p>
+    {% endfor %}
+    {% endif %}
+<h1>Welcome {{user}}</h1>
+<a href="{% url 'changePass' %}">Change you password</a><br>
+<a href="{% url 'changePass2' %}">Change you password 2</a><br>
+<a href="{% url 'editProfile' %}">Edit Profile</a>
+{% endblock %}

@@ -1,0 +1,5 @@
+Authentication:
+Authentication is a process of verifying the identity of a user.
+
+Authorization:
+Authorization is a process of granting or denying access.
