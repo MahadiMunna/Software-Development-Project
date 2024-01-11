@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if messages %}
+    {% for i in messages %}
+    <h4 class="text-{{i.tags}} text-center my-2">{{i}}</h4>
+    {% endfor %}
+{% endif %}
+    <h1 class="text-center my-5"> Welcome {{user.first_name}} {{user.last_name}}</h1>
+    <p class="mt-4 text-center"><a class="btn btn-outline-primary" href="{% url 'change_pass_with' %}">Change Password with Old Password</a>
+    <a class="btn btn-outline-secondary" href="{% url 'change_pass_without' %}">Change Password without Old Password</a></p>
+{% endblock %}

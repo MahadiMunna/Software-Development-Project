@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if messages %}
+    {% for i in messages %}
+    <h4 class="text-{{i.tags}} text-center my-2">{{i}}</h4>
+    {% endfor %}
+{% endif %}
+<h1 class="text-lg text-center mt-5">Welcome to auth_app</h1>
+{% endblock %}
