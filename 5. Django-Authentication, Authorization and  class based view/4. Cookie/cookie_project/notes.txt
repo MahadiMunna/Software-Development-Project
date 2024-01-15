@@ -1,0 +1,7 @@
+Session vs cookie
+Session: 
+1. Authentication, Shopping cart
+2. database
+Cookie
+1. Theme, language preferences
+2. Browser storage
