@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="mx-auto" style="max-width: 600px;">
+    <form action="" method="post">
+        <h1>Are you sure?Do you want to logout?</h1>
+        {% csrf_token %}
+        {{form | crispy}}
+
+        <button class="btn btn-success">Logout</button>
+    </form>
+</div>
+{% endblock %}
